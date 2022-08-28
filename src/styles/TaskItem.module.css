@@ -1,0 +1,77 @@
+.task{
+  width: 100%;
+  background: var(--gray-500);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid var(--gray-400);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.task + .task {
+  margin-top: .75rem;
+}
+
+.task input[type=checkbox] {
+  position: relative;
+  cursor: pointer;
+  margin-right: 1rem;
+  margin-top: .2rem;
+  width: 19px;
+  height: 19px;
+}
+.task input[type=checkbox]:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -4px;
+  left: -4px;
+  background-color: var(--gray-500);
+  border-radius: 50%;
+  border: 3px solid var(--blue);
+}
+.task input[type=checkbox]:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -4px;
+  left: -4px;
+  background-color: var(--purple);
+  border: 3px solid var(--purple);
+}
+.task input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+
+.task span {
+  flex: 3;
+  line-height: 1.4;
+  color: var(--gray-100);
+}
+
+.task .finished {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+.task button {
+  background: none;
+  border: 0;
+  padding: .5rem;
+  color: var(--gray-300);
+}

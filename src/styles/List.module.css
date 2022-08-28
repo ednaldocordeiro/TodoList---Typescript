@@ -1,0 +1,32 @@
+.list {
+  width: 45%;
+}
+
+.list header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.list header .created {
+  font-size: 0.875rem;
+  color: var(--blue);
+  line-height: 1.7;
+}
+
+.list header .finished {
+  font-size: 0.875rem;
+  color: var(--purple);
+  line-height: 1.7;
+}
+
+.list header .counter {
+  margin-left: .8rem;
+  background: var(--gray-400);
+  padding: 0.125rem .5rem;
+  border-radius: 10px;
+  color: var(--gray-200);
+  font-size: .75rem;
+  font-weight: bold;
+}
